@@ -1,3 +1,12 @@
+## Key Highlights
+
+- Built an AI-powered candidate ranking system
+- Uses semantic search with Sentence Transformers
+- Supports OCR for scanned resumes
+- Performs skill extraction and matching
+- Implements hybrid scoring for ranking candidates
+- Evaluated using multiple ranking and relevance tests
+
 # AI Candidate Ranking System
 
 An AI-powered recruitment system that ranks candidates based on resume content, semantic similarity, and skill matching. The system helps recruiters identify the most relevant candidates for a job description using NLP, embeddings, OCR, and hybrid scoring techniques.
