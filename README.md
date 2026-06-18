@@ -1,87 +1,217 @@
-## Key Highlights
+# TalentMatch AI – Enterprise AI Recruitment Platform
 
-- Built an AI-powered candidate ranking system
-- Uses semantic search with Sentence Transformers
-- Supports OCR for scanned resumes
-- Performs skill extraction and matching
-- Implements hybrid scoring for ranking candidates
-- Evaluated using multiple ranking and relevance tests
+TalentMatch AI is an AI-powered recruitment platform that helps recruiters identify the best candidates using semantic search, vector embeddings, OCR, skill matching, and intelligent ranking.
 
-# AI Candidate Ranking System
+Instead of relying only on keyword matching, the platform understands resume content and job requirements to rank candidates based on overall relevance and skill fit.
 
-An AI-powered recruitment system that ranks candidates based on resume content, semantic similarity, and skill matching. The system helps recruiters identify the most relevant candidates for a job description using NLP, embeddings, OCR, and hybrid scoring techniques.
+## Live Demo
 
-## Features
+https://ai-candidate-alchemy.lovable.app
 
-* Resume PDF Processing
-* OCR Support for Scanned Resumes
-* Semantic Search using Sentence Transformers
-* Skill Extraction and Matching
-* Hybrid Candidate Scoring
-* Candidate Ranking and Recommendations
-* Resume Analysis and Evidence Generation
+## Project Overview
 
-## Tech Stack
+Recruiters often review hundreds of resumes and still miss qualified candidates because traditional Applicant Tracking Systems (ATS) rely heavily on keywords.
 
-* Python
-* Pandas
-* NumPy
-* Scikit-Learn
+TalentMatch AI solves this problem by combining:
+
+* OCR-based resume processing
+* Semantic similarity search
+* Skill extraction and matching
+* Vector embeddings
+* Hybrid candidate scoring
+
+The platform automatically analyzes resumes, compares them with job descriptions, and generates intelligent rankings and recommendations.
+
+---
+
+## Key Features
+
+### AI-Powered Candidate Ranking
+
+* Semantic similarity scoring between resumes and job descriptions
+* Vector embedding-based matching
+* Intelligent ranking system
+
+### OCR Support
+
+* Extracts text from scanned PDF resumes
+* Automatic fallback when text layers are unavailable
+
+### Skill Matching
+
+* Detects required skills from job descriptions
+* Compares candidate skills against requirements
+* Highlights matched and missing skills
+
+### Recruiter Dashboard
+
+* Candidate ranking table
+* Recommendation categories
+* Analytics and reporting
+
+### Candidate Comparison
+
+* Side-by-side comparison of candidates
+* Skill coverage analysis
+* Score breakdown visualization
+
+### Recruiter Workflow
+
+* Candidate status management
+* Recruiter notes
+* Candidate tracking
+
+### Export & Reporting
+
+* CSV export
+* PDF export
+* Ranking reports
+
+### Authentication & Security
+
+* Google Authentication
+* Role-based access control
+* Row-Level Security (RLS)
+
+---
+
+## Technology Stack
+
+### AI / Machine Learning
+
 * Sentence Transformers
-* PDFPlumber
-* Tesseract OCR
-* Matplotlib
+* Semantic Search
+* Vector Embeddings
+* Cosine Similarity
+* OCR
 
-## Project Workflow
+### Backend
 
-Job Description
-→ Skill Extraction
-→ Resume Processing
-→ OCR / Text Extraction
+* Supabase
+* PostgreSQL
+* pgvector
+* Server Functions
+
+### Frontend
+
+* React 19
+* TypeScript
+* TanStack Router
+* TanStack Query
+* Tailwind CSS
+
+### AI Services
+
+* Gemini AI
+* OpenAI Embeddings
+* Lovable AI Gateway
+
+### Data Processing
+
+* PDF Processing
+* OCR Pipeline
+* Resume Parsing
+
+---
+
+## System Architecture
+
+Resume PDF
+→ Text Extraction
+→ OCR Fallback (if scanned)
+→ Resume Parsing
 → Embedding Generation
 → Semantic Similarity Calculation
 → Skill Matching
 → Hybrid Scoring
 → Candidate Ranking
+→ Recruiter Dashboard
 
-## Scoring Method
+---
 
-Final Score = Semantic Match + Skill Match
+## Scoring Methodology
 
-The system combines:
+Semantic Score
 
-* Semantic similarity between job descriptions and resumes
-* Skill overlap analysis
-* Evidence-based ranking
+* Generated using vector embeddings and cosine similarity
+* Measures how closely a resume matches a job description
 
-## Testing Performed
+Skill Score
+
+* Measures overlap between required skills and candidate skills
+
+Final Score
+
+Final Score = 0.8 × Semantic Score + 0.2 × Skill Score
+
+Bonus Rule
+
+* Candidates with 100% skill coverage and strong semantic relevance receive an additional bonus
+
+Recommendation Categories
+
+* Strong Fit: ≥ 75
+* Good Fit: ≥ 60
+* Potential Fit: ≥ 40
+* Weak Fit: < 40
+
+---
+
+## Validation Testing
+
+The system was tested using:
 
 * Relevant vs Non-Relevant Resume Ranking
-* Cross-Domain Resume Testing
+* Cross-Domain Resume Validation
 * Perfect Candidate Benchmark Testing
-* Runtime Evaluation
-* Score Distribution Analysis
-* Recommendation Bucket Validation
+* Recommendation Threshold Validation
+* Runtime Performance Testing
+* Candidate Ranking Consistency Testing
 
-## Sample Output
+Results demonstrated successful separation of highly relevant, partially relevant, and unrelated candidates.
 
-The system generates:
+---
 
-* Candidate Rankings
-* Semantic Match Scores
-* Skill Match Scores
-* Final Scores
-* Recommendation Categories (Strong Fit, Good Fit, Potential Fit, Weak Fit)
-* Matched and Missing Skills
+## Features Implemented
 
-## Future Improvements
+* Resume Upload
+* OCR Processing
+* Semantic Search
+* Skill Matching
+* Candidate Ranking
+* Candidate Comparison
+* Analytics Dashboard
+* Recruiter Notes
+* Candidate Status Tracking
+* CSV/PDF Export
+* Google Authentication
+* Error Recovery & Reprocessing
 
-* Full-Stack Web Application
-* Recruiter Dashboard
-* Real-Time Resume Processing
-* Vector Database Integration (pgvector)
-* Advanced Analytics and Reporting
+---
+
+## Future Enhancements
+
+* Multi-language OCR
+* Interview Question Generation
+* AI Resume Feedback
+* Candidate Shortlisting Automation
+* Advanced Recruiter Analytics
+* Email Notifications
+* Team Collaboration Features
+
+---
 
 ## Author
 
 Saimeghana Vadluri
+
+B.Tech CSE (AI & ML)
+VIT-AP University
+
+---
+
+## Project Status
+
+Production-Ready Portfolio Project
+
+Successfully deployed as a full-stack AI recruitment platform with semantic search, OCR, vector embeddings, candidate ranking, and recruiter workflow management.
