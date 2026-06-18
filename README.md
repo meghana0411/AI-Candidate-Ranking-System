@@ -215,3 +215,17 @@ VIT-AP University
 Production-Ready Portfolio Project
 
 Successfully deployed as a full-stack AI recruitment platform with semantic search, OCR, vector embeddings, candidate ranking, and recruiter workflow management.
+
+## Screenshots
+
+### Landing Page
+![Landing Page](1.png)
+
+### Ranking Dashboard
+![Ranking Dashboard](2.png)
+
+### Candidate Comparison
+![Candidate Comparison](3.png)
+
+### Analytics Dashboard
+![Analytics Dashboard](4.png)
